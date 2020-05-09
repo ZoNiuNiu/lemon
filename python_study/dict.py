@@ -1,8 +1,10 @@
 import operator
-son = {'d':2}
-father = [{'a':1, 'b':{'c':1, 'd':2}},{'f':1}]
+
+son = {'d': 2}
+father = [{'a': 1, 'b': {'c': 1, 'd': 2}}, {'f': 1}]
 
 son_list = list(son.items())
+
 
 def change(abc):
     mid_list = []
@@ -15,6 +17,7 @@ def change(abc):
             mid_list.append(item1)
     return mid_list
 
+
 father_list = []
 for item in father:
     b = change(list(item.items()))
@@ -24,7 +27,6 @@ print(son_list)
 print(father_list)
 print(set(son_list))
 print(set(father_list))
-
 
 if set(son_list).issubset(set(father_list)):
     print(True)
