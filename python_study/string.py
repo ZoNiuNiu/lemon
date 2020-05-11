@@ -1,4 +1,3 @@
-import turtle
 import time
 # t = turtle.Pen()
 # for x in range(1, 120, 2):
